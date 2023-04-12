@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@450&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gajraj+One&display=swap');
+
+.mens {
+  background-color: black;
+  z-index: -3;
+}
+
+.mens-image-section {
+  height: 550px;
+  background-image:
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 1)), 
+    url(../images/about-background-3.jpg);
+  background-attachment: local;
+  background-size: cover;
+  margin-bottom: 48px;
+  animation: fadeIn .5s forwards;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 3.8rem;
+  font-family: 'Gajraj One', cursive;
+  letter-spacing: 24px;
+  color:rgba(255, 255, 255, 0.685)
+}
+
+.mens-products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 19em));
+  gap: 2rem;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+
+.mens-products img {
+  width: 300px;
+  height: 500px;
+  object-fit: cover;
+  animation: fadeIn .5s forwards;
+}
+
+.card {
+  position: relative;
+  cursor: pointer;
+  animation: fadeIn .9s forwards;
+}
+
+.selected-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1000;
+}
+
+.selected-item {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1001;
+  background-color: black;
+  display: flex;
+  filter: drop-shadow(0 0 0.4rem rgb(0, 0, 0));
+  border: 1px solid white;
+  height: 550px
+}
+
+.item-image {
+  height: 100%;
+  width: auto;
+  margin-right: 24px;
+  filter:brightness(90%);
+  box-shadow: 1 1 200px rgba(0,0,0,0.9) inset;
+}
+
+.item-right {
+  padding: 16px 48px 0px 16px;
+  font-family: 'IBM Plex Sans', sans-serif;
+  color: white;
+}
+
+.selected-brand {
+  font-size: .8rem;
+}
+
+.selected-title {
+  font-size: 2.1rem;
+  font-weight: 700px;
+}
+
+.selected-price {
+  font-size: 1.2rem;
+  margin-bottom: 24px;
+}
+
+.selected-description {
+  font-size: 1rem;
+  font-style: italic;
+  height: 28px;
+  border-bottom: solid 1px rgba(255, 255, 255, 0.404);
+  margin-bottom: 24px;
+}
+
+.close-button {
+  position: fixed;
+  top: 8px;
+  right: 8px;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: white;
+}
+
+.close-button:hover{
+  transform: scale(1.10);
+  transition: .3s ease-in-out;
+}
+
+.bottom-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.add-to-cart {
+  position: fixed;
+  bottom: 24px;
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+  height: 10%;
+  width: 23%;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.add-to-cart:hover {
+  color: black;
+  background-color: white;
+  transition: .5s ease;
+}
+
+@media (max-height: 800px) {  
+  .selected-item {
+    height: 400px;
+  }
+}

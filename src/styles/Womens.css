@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Gajraj+One&display=swap');
+
+.womens {
+  background-color: black;
+}
+
+.womens-image-section {
+  height: 550px;
+  background-image:
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 1)), 
+    url(../images/mens-background.jpg);
+  background-attachment: local;
+  background-size: cover;
+  margin-bottom: 48px;
+  animation: fadeIn .5s forwards;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 3.8rem;
+  font-family: 'Gajraj One', cursive;
+  letter-spacing: 24px;
+  color:rgba(255, 255, 255, 0.685)
+}
+
+.womens-products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 19em));
+  gap: 2rem;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  animation: fadeIn .5s forwards;
+}
+
+
+.womens-products img {
+  width: 300px;
+  height: 550px;
+  object-fit: cover;
+}
+
+.card {
+  position: relative;
+}
+
+.card:hover {
+  transform: scale(1.03);
+  transition: .3s ease-in-out;
+}
+
+
+.price {
+  color: black;
+  background-color: white;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-style: italic;
+  padding: 12px 0px 12px 0px;
+  width: 99.8%;
+}

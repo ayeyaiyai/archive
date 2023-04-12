@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Sono:wght@200;400&display=swap');
+
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: black;
+}
+
+.about-image {
+  position: fixed;
+  bottom: 0;
+  height: 100vh;
+  width: 100%;
+  background-image:
+  linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1)), 
+  url(../images/womens-background.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  animation: fadeIn .6s;
+}
+
+.about-body {
+  width: 500px;
+  text-align: center;
+  color: white;
+  font-family: 'Sono', sans-serif;
+  z-index: 5;
+  animation: fadeIn .6s;
+}
+
+.about-title {
+  font-size: 2em;
+  margin-bottom: 8px;
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 8px;
+}
+
+.about-description {
+  font-weight: 200;
+}

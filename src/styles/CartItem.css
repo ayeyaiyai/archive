@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@450&display=swap');
+
+.cart-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 16px;
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.cart-left-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-right: 1rem;
+}
+
+.cart-title {
+  font-size: .9em;
+}
+
+.cart-price {
+  font-size: .7em;
+  font-style: italic;
+  margin-bottom: 12px;
+}
+
+.cart-right-side {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.cart-item img {
+  height: 100px;
+  width: auto;
+  border: 1px solid black;
+}
+
+.remove-item {
+  cursor: pointer;
+  background-color: white;
+  border: 1px solid black;
+  height: 1.5rem;
+  width: 5rem;
+}
+
+div {
+  list-style-type: none;
+}
